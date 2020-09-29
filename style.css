@@ -308,17 +308,28 @@ a:hover {
     margin: 0;
 }
 
-.navbar .nav {
-    padding-top: 2px;
+/*.navbar .nav*/#nav_bar_contact {
+    /*padding-top: 2px;
     margin-right: -16px;
     float: right;
-    z-index: 1;   
+    z-index: 1; */  
+    margin-right: 10%;
+    float: right;
+    z-index: 1;
+    padding-bottom: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
 }
 
 .nav > li {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    font-size: x-large;
+    margin-left: 30px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -696,7 +707,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 30px auto auto auto;
 }
 
 h2 {
@@ -1036,14 +1047,14 @@ h4 {
     }
 }
 
-li:hover {
-    font-size: large;
+.nav > li :hover {
+    border-bottom: black;
 }
 a:focus {
-    border-bottom: black dashed 2px;
+    /*border-bottom: black dashed 2px;
     border-top: black dashed 2px;
     border-left: dashed black 2px;
-    border-right: black dashed 2px;
+    border-right: black dashed 2px;*/
 }
 #text_1, #text_2, #text_3 {
     font-size: 25px;
@@ -1084,7 +1095,43 @@ a:focus {
     justify-content: space-between;
     margin-left: 10px;
     align-items: center;
+    color: black!important;
+    padding: 0;
 }
 #partenariat {
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 30%;
+    color: black;
+}
+.partenaires_1 a:hover {
+    color: white!important;
+}
+.nav > li:hover {
+    text-decoration: underline black;
+}
+a:hover {
+    text-decoration: underline;
+}
+#formulaire {
+    display: flex;
+    font-size: 20px;
+}
+#nom {
+    display: flex;
+    margin-bottom: 20px;
+}
+#email {
+    margin-bottom: 10px;
+}
+#media {
+    margin-bottom: 20px;
+}
+.contact {
+    font-size: 20px;
+    line-height: 27px;
     text-align: center;
+    margin-left: 70%;
+    width: max-content;
 }
