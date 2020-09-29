@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black/* rgba(255, 255, 255, .6);*/
 }
 
 .d-bloc .a-btn:hover,
@@ -687,7 +687,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: black!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -748,7 +748,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165,147,99,1);/*rgba(165, 147, 99, 0.7);*/
+    background-color:#F3976C!important/* rgba(165,147,99,1)*/;
     padding: 40px 40px 40px 40px; 
 }
 
@@ -775,7 +775,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1056,9 +1056,12 @@ a:focus {
 }
 #objectif {
     font-size: 25px;
+    color: white!important;
+    
 }
 #collab {
     font-size: 18px;
+    color: black!important;
 }
 #tc-1, #tc-2 {
     position: relative;
@@ -1066,4 +1069,22 @@ a:focus {
 }
 #tc-2 {
     font-size: 20px;
+}
+#base {
+    color: black!important;
+    font-size: medium;
+}
+#partenaires {
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+}
+.partenaires_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    align-items: center;
+}
+#partenariat {
+    text-align: center;
 }
