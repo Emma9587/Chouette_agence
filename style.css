@@ -1135,3 +1135,7 @@ a:hover {
     margin-left: 70%;
     width: max-content;
 }
+#footer-contact {
+    color: black!important;
+    font-size: medium;
+}
