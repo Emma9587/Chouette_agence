@@ -11,14 +11,15 @@
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
+	
     <title>contact</title>
 
     
@@ -34,17 +35,20 @@
 <!-- bloc-0 -->
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="chouette agence web design logo" height="40" /></a>
+
+		<nav class="navbar row" >
+			<div class="navbar-header" >
+				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt=" logo chouette agence web lyon" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav" id="nav_bar_contact">
+				<ul class="site-navigation nav navbar-nav" id="li_contact">
 					<li>
 						<a href="index.html">Accueil</a>
+					</li>
+					<li>
 					</li>
 					<li>
 						<a href="contact.html">contact</a>
@@ -58,7 +62,7 @@
 
 <!-- bloc-6 -->
 <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-	<div class="container bloc-lg">
+	<div class="container bloc-lg" id="parlons_web">
 		<div class="row">
 			<div class="col-sm-12">
 				<h1 class="text-center hero-bloc-text" id="tc-1">
@@ -77,7 +81,7 @@
 <!-- bloc-7 -->
 <div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
-		<div class="row">
+		<div class="row" id="md">
 			<div class="col-sm-6" id="formulaire">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" >
 					<div class="form-group" id="nom">
@@ -98,12 +102,12 @@
 						</label>
 						<input class="form-control" alt="comment nous avez-vous connu" type="text" required id="input_504" />
 					</div>
-					<div class="form-group">
+					<div class="form-group" id="message">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" alt="détails de votre projet" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="area"  alt="détails de votre projet" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" id="btn">
 						Envoyer
 					</button>
 				</form>
@@ -125,7 +129,7 @@
 
 <!-- Footer - bloc-8 -->
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
+	<div class="container bloc-sm" id="footer_bloc">
 		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center white" id="footer-contact">
