@@ -14,11 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	
 	
     <title>contact</title>
 
@@ -83,35 +79,42 @@
 	<div class="container bloc-lg">
 		<div class="row" id="md">
 			<div class="col-sm-6" id="formulaire">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" >
+				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" ></form>
+				<div class="identity">
 					<div class="form-group" id="nom">
 						<label>
-							Nom
+							Nom *
 						</label>
-						<input type="text" alt="votre nom" id="name" class="form-control" required />
+						<input type="text" id="name" class="form-control" required />
 					</div>
+					<div class="form-group" id="prenom">
+						<label>
+							Prénom *
+						</label>
+						<input type="text" id="firstname" class="form-control" required />
+					</div>
+				</div>
 					<div class="form-group" id="mail">
 						<label>
-							Adresse email
+							Adresse email *
 						</label>
-						<input id="email" alt="votre adresse mail" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group" id="media">
 						<label>
-							Comment nous avez-vous connu ?
+							Comment nous avez-vous connu ? *
 						</label>
-						<input class="form-control" alt="comment nous avez-vous connu" type="text" required id="input_504" />
+						<input class="form-control" type="text" id="show" required />
 					</div>
 					<div class="form-group" id="message">
 						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="area"  alt="détails de votre projet" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
+							Brief de votre projet (Ajoutez autant de détails que nécessaire) *<br>	
+						</label>
+						<textarea class="form-control" id="brief"  required></textarea>
+					</div>
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" id="btn">
 						Envoyer
-					</button>
-				</form>
-			</div>
+					</button>	
 			<div class="col-sm-6" id="contact">
 				<p class="contact">
 					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
@@ -138,22 +141,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md" alt="icone twitter"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md" alt="icone facebook"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md" alt="icone dribble"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md" alt="icone instagram"></span></a>
+							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
@@ -165,7 +168,14 @@
 
 </div>
 <!-- Principal conteneur END -->
-    
+</div>    
 
 </body>
+
+<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
+
 </html>

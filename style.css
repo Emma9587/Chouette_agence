@@ -514,9 +514,13 @@ button {
     border-color: rgba(0, 0, 0, .3);
     box-shadow: none;
     height: 20px;
-    margin-left: 10px;
+    margin-top: 20px;
+    width: 250px;
+    /*margin-left: 10px;*/
 }
-
+#briefing{
+    display: none;
+}
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -798,7 +802,7 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: black!important;
-    margin: 50px 0 100px 0;
+    margin: 100px 0 100px 0;
 
 }
 
@@ -1072,7 +1076,7 @@ a:focus {
 #text_1, #text_2, #text_3 {
     font-size: 25px;
     color: black;
-    font-style: bold;
+    /*font-style: bold;*/
 }
 #votre_projet {
    font-size: 32px;
@@ -1137,13 +1141,35 @@ a:hover {
 }
 #nom {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+#prenom {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    flex-direction: column;
+}
+.identity {
+    display: flex;
+    justify-content: space-between;
+
 }
 #mail {
-    margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 60px;
+    flex-direction: column;
+}
+#email{
+    width: 350px;
 }
 #media {
-    margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+#show {
+    display: flex;
 }
 .contact {
     font-size: 20px;
@@ -1180,7 +1206,7 @@ a:hover {
     max-width: 1000px;
 }
 #message {
-    height: 70px;
+    /*height: 70px;*/
     width: 500px;
 }
 #chouette {
@@ -1205,8 +1231,19 @@ a:hover {
     margin-right: 20%;
    
 }
-
-
+#bloc-7{
+    padding: 0;
+}
+#formulaire{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+#brief{ 
+    width: 350px;
+    height: 100px;
+    display: block;
+}
 @media (min-width: 640px) and (max-width: 992px){
 
     #chouette {
@@ -1216,13 +1253,47 @@ a:hover {
         margin: 0;
     }
     #bloc-7 {
-        display: flex;
+        
+       
     }
     #bloc-0 {
         margin:0;
        
     }
+    .bloc .container {
+        margin: auto;
+        padding-left: 0;
+    }
+    #message {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    #brief{
+        width: 350px;
+        height: 100px;
+    }
+    .row{
+        margin-left: 60px;
+    }
+    #index_footer{
+        padding-right: 80px;
+    }
+    #icones{
+        margin-right: 50px;
+    }
+    #partenariat{
+        margin-right: 20px;
+    }
+    #footer_bloc{
+        min-width: 500px;
+    }
+    #footer_bloc .row {
+        margin-left: 0;
+    }
 }
+
 
 @media (min-width: 320px) and (max-width: 640px) {
 
@@ -1335,5 +1406,47 @@ a:hover {
     margin:0;
    
 }
-
+.identity{
+    display: flex;
+    flex-direction: column;
+}
+#nom{
+    display: grid;
+}
+#mail{
+    display: grid;
+}
+#email{
+    width: 250px;
+}
+#prenom{
+    margin: auto;
+    margin-bottom: 30px;
+}
+#media{
+    width: min-content;
+    margin-left: 25px;
+}
+#brief{
+    
+    /*display: none;*/
+    height: 100px;
+    margin-top: 20px;
+    width: 250px;
+}
+#formulaire{
+    display: block;
+}
+.brief_title{
+    text-align: left;
+}
+.d-bloc {
+    text-align: center;
+}
+/*#briefing{
+    display: flex;
+    height: 100px;
+    margin-top: 20px;
+    width: 250px;
+}*/
 }
