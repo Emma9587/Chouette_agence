@@ -1208,6 +1208,7 @@ a:hover {
 #message {
     /*height: 70px;*/
     width: 500px;
+    margin-top: 30px;
 }
 #chouette {
     margin-left: 20%;
@@ -1303,7 +1304,7 @@ a:hover {
     }
     #votre_projet {
         margin-left: 20px;
-    margin-right: 20px;
+        margin-right: 20px;
     }
     #text_1, #text_2, #text_3 {
         text-align: center;
@@ -1423,9 +1424,16 @@ a:hover {
     margin: auto;
     margin-bottom: 30px;
 }
+#form-group-media {
+    display: grid;
+}
 #media{
-    width: min-content;
-    margin-left: 25px;
+    margin: auto;
+    text-align: center;
+}
+#show {
+    
+    margin: auto;
 }
 #brief{
     
