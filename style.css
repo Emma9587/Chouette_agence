@@ -721,10 +721,13 @@ p {
     /*margin: auto;*/
     display: flex;
     justify-content: space-around;
-
-
 }
-
+.social span {
+    color: black!important;
+}
+.social span:hover {
+    color: white!important;
+}
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -862,6 +865,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -1295,6 +1299,7 @@ a:hover {
     #footer_bloc .row {
         margin-left: 0;
     }
+
 }
 
 
